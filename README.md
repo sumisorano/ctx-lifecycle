@@ -101,16 +101,36 @@ lifecycle:
 
 ---
 
+## 实战策略
+
+光有工具不够，还要知道**什么时候该做什么**。
+
+[`docs/STRATEGY.md`](docs/STRATEGY.md) 是一份实操指南，回答三个问题：
+
+| 问题 | 答案 |
+|------|------|
+| 什么时候跑 `/ctx-check`？ | 加载 **≥ 3 个 Skill** 时 |
+| 什么时候跑 `/ctx-clean`？ | `/ctx-check` 建议回收时 |
+| 几十轮后还慢怎么办？ | 新会话 + 上下文摘要 |
+
+从第 0 层（预防）到第 4 层（环境优化），分层递进，拿着就能用。
+
+---
+
 ## 项目结构
 
 ```
 gongcheng-shentui/
-├── README.md                         # 本文档
-├── DESIGN.md                         # 设计文档
+├── README.md                         # 本文档（快速开始）
+├── DESIGN.md                         # 设计文档（为什么这么设计）
+├── docs/
+│   └── STRATEGY.md                   # 实战策略（什么时候该做什么）
 ├── .claude/
 │   └── commands/
 │       ├── ctx-check.md              # /ctx-check 命令
 │       └── ctx-clean.md              # /ctx-clean 命令
+├── test-reports/
+│   └── 功成身退-压力测试报告.md       # 实测数据（5 技能压力测试）
 └── lifecycle-template/
     ├── SKILL.md                      # 生命周期模板（复制即用）
     ├── GUIDE.md                      # 模板使用指南
@@ -135,14 +155,14 @@ gongcheng-shentui/
 - [x] 产品定位 & 命名
 - [x] `/ctx-check` + `/ctx-clean` 命令
 - [x] Skill 生命周期模板 + 使用指南
-- [ ] 实测验证（欢迎提 issue 反馈！）
+- [x] 实测验证 — 5 技能压力测试通过 ✅（释放 ~20k tokens）
 - [ ] 录制演示 GIF
 
 ---
 
 ## 许可
 
-GNU General Public License v3.0
+GPL-3.0
 
 ---
 
