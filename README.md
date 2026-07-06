@@ -139,7 +139,7 @@ gongcheng-shentui/
 
 ## 许可
 
-MIT
+GNU General Public License v3.0
 
 ---
 
