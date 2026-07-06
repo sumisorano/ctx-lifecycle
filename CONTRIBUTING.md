@@ -4,7 +4,7 @@
 
 ## 项目定位
 
-功成身退是 **Claude Code Skill 上下文生命周期管理工具**。核心是两个命令文件（`.claude/commands/`）外加一套模板。
+功成身退是 **Claude Code Skill 生命周期管理工具**。核心是两个命令文件（`.claude/commands/`）外加一套模板。
 
 **重要：** 功成身退不依赖外部工具、不改 Claude Code 源码、纯提示词工程。任何贡献都应保持这一原则。
 
