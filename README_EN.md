@@ -119,9 +119,9 @@ Assuming 3 sessions/day, 22 working days/month:
 
 | Model | 10-person team / month | 10-person team / year |
 |-------|----------------------|---------------------|
-| DeepSeek | ¥6.6~13.2 | ¥80~160 |
-| Claude Sonnet | **$39.60** | **$475** |
 | Claude Opus | **$198** | **$2,376** 🚀 |
+| Claude Sonnet | **$39.60** | **$475** |
+| DeepSeek | ¥6.6~13.2 | ¥80~160 |
 
 ### Beyond money
 
