@@ -111,9 +111,9 @@ Assuming 3 sessions/day, 22 working days/month:
 
 | Model | Input price / 1M | Tokens saved / month | Money saved / month | Yearly |
 |-------|-----------------|---------------------|--------------------|--------|
-| DeepSeek V4 Flash | ¥0.5 | 1.32M | **¥0.66** | ¥8 |
-| Claude Sonnet 4 | $3.00 | 1.32M | **$3.96** | $48 |
 | Claude Opus 4 | $15.00 | 1.32M | **$19.80** | $238 |
+| Claude Sonnet 4 | $3.00 | 1.32M | **$3.96** | $48 |
+| DeepSeek V4 Flash | ¥0.5 | 1.32M | **¥0.66** | ¥8 |
 
 ### Team savings
 
@@ -125,12 +125,14 @@ Assuming 3 sessions/day, 22 working days/month:
 
 ### Beyond money
 
-| Benefit | Detail |
-|---------|--------|
-| ⏱️ **Speed** | From >60s timeout down to <15s — **4× faster** |
-| 🧠 **Effective context** | Dead skills don't crowd the window; model focuses on what matters |
-| 🛡️ **No wall-hitting** | Stay fast at 50+ turns without losing context to a new session |
-| 🪙 **Quota efficiency** | Pro users get more done within their monthly limit |
+| Benefit | Detail | Why it matters |
+|---------|--------|---------------|
+| ⏱️ **Speed** | From >60s timeout down to <15s — **4× faster** | Waiting breaks flow. At 60s you check your phone; at 15s you stay in the zone |
+| 🧠 **Effective context** | Dead skills don't crowd the window; the model focuses on what you actually need | Same conversation turn, but the model reads your request instead of 5 skill rulebooks |
+| 🛡️ **No wall-hitting** | Stay fast at 50+ turns without losing context to a new session | Without ctx-lifecycle, you hit timeout long before you're done. Starting fresh means losing all intermediate context |
+| 🪙 **Quota efficiency** | Pro/Max users get more done within their monthly limit | Your quota pays for reasoning, not re-transmitting dead skill rules every turn |
+| ♻️ **Compound savings** | Each cleanup saves ~20k once, but **keeps saving on every subsequent turn** | Reclaim 4 skills × ~800 tokens each × 20 turns = 64k extra tokens saved beyond the initial compaction |
+| 🎯 **Output quality** | Less noise in the context window = fewer hallucinated responses | Sometimes the model thinks a dead skill's task is still active, leading to off-topic or confused answers |
 
 > 💡 DeepSeek is cheap — the real win is time, not token cost. For Claude Opus users, each 20k tokens saved ≈ $0.30.
 
